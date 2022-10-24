@@ -8,11 +8,11 @@
 # - Bitrise CLI guides: http://devcenter.bitrise.io/bitrise-cli/
 
 title: |-
-  esChecker
+  esChecker, by eShard
 summary: |
-  Run MAST Security analyses using esChecker
+  Run Mobile Application Security Testing using esChecker
 description: |
-  Run esChecker analysys on new application builds directly from Bitrise.
+  Run esChecker analyses on new application builds directly from Bitrise.
 website: https://github.com/eshard/bitrise-step-eschecker
 source_code_url: https://github.com/eshard/bitrise-step-eschecker
 support_url: https://github.com/eshard/bitrise-step-eschecker/issues
@@ -78,14 +78,14 @@ inputs:
         esChecker token generated from esChecker UI.
       is_required: true
       is_sensitive: true
-      summary: Your esChecker API token
+      summary: Your esChecker API token, get it from https://eschecker.eshard.com/rest-api
       title: esChecker API token
   - eschecker_app_id:
     opts:
       description: |
         Application ID in esChecker
       is_required: true
-      summary: Unique ID of your application in esChecker
+      summary: Unique ID of your application in esChecker, get it from the `App Information` tab of the app
       title: Application ID
   - eschecker_campaign_id:
     opts:
@@ -99,6 +99,6 @@ outputs:
   - eschecker_pdf_report:
     opts:
       title: "esChecker report PDF"
-      summary: Contains all relevant information on an esChecker test.
+      summary: Contains all relevant information oo an esChecker Campaign.
       description: |
-        PDF version of esChecker report.
+        PDF export of the esChecker report.
