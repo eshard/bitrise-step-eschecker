@@ -99,6 +99,6 @@ outputs:
   - eschecker_pdf_report:
     opts:
       title: "esChecker report PDF"
-      summary: Contains all relevant information oo an esChecker Campaign.
+      summary: Contains all relevant information on an esChecker Campaign run.
       description: |
-        PDF export of the esChecker report.
+        Local PDF export of the esChecker report.
